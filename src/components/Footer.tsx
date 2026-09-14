@@ -1,8 +1,6 @@
-interface FooterProps {
-  onGetBupkis: () => void
-}
+import GetBupkisLink from './GetBupkisLink'
 
-export default function Footer({ onGetBupkis }: FooterProps) {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
@@ -17,9 +15,7 @@ export default function Footer({ onGetBupkis }: FooterProps) {
         </div>
 
         <div className="footer-cta">
-          <button type="button" className="btn-primary" onClick={onGetBupkis}>
-            Get Bupkis — $4
-          </button>
+          <GetBupkisLink className="btn-primary">Get Bupkis — $4</GetBupkisLink>
         </div>
 
         <div className="footer-legal">

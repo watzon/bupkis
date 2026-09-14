@@ -1,8 +1,6 @@
-interface CtaBannerProps {
-  onGetBupkis: () => void
-}
+import GetBupkisLink from './GetBupkisLink'
 
-export default function CtaBanner({ onGetBupkis }: CtaBannerProps) {
+export default function CtaBanner() {
   return (
     <section className="cta-banner" aria-labelledby="cta-heading">
       <div className="container">
@@ -15,10 +13,8 @@ export default function CtaBanner({ onGetBupkis }: CtaBannerProps) {
             the competition by a full dollar.
           </p>
           <div className="cta-banner-actions">
-            <button type="button" className="btn-primary" onClick={onGetBupkis}>
-              Get Extra Nothing — $4
-            </button>
-            <p className="cta-banner-note">One-time payment. Lifetime access to void.</p>
+            <GetBupkisLink className="btn-primary">Get Bupkis — $4</GetBupkisLink>
+            <p className="cta-banner-note">Pay via Ko-fi. Instant nothing.</p>
           </div>
         </div>
       </div>

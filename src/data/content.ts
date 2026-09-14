@@ -1,3 +1,5 @@
+export const KOFI_URL = 'https://ko-fi.com/watzon'
+
 export const features = [
   {
     title: 'Absolute Void mode',
@@ -103,7 +105,7 @@ export const faqs = [
   {
     question: 'Is my payment secure?',
     answer:
-      'Payments are not wired yet. The checkout is a waitlist stub. When we integrate Lemon Squeezy or Stripe, we will update this FAQ with real answers.',
+      'Payments go through Ko-fi, a trusted platform for creators. You pay $4, we deliver nothing. Instant gratification, zero fulfillment.',
   },
 ] as const
 
