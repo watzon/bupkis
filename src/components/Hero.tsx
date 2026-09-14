@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom'
 import PlatformPills from './PlatformPills'
+import GetBupkisLink from './GetBupkisLink'
 
-interface HeroProps {
-  onGetBupkis: () => void
-}
-
-export default function Hero({ onGetBupkis }: HeroProps) {
+export default function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="container hero-inner">
@@ -25,10 +22,8 @@ export default function Hero({ onGetBupkis }: HeroProps) {
         <PlatformPills />
 
         <div className="hero-actions">
-          <button type="button" className="btn-primary hero-cta" onClick={onGetBupkis}>
-            Get Extra Nothing — $4
-          </button>
-          <p className="hero-note">One-time payment / instant download access.</p>
+          <GetBupkisLink className="btn-primary hero-cta">Get Bupkis — $4</GetBupkisLink>
+          <p className="hero-note">Pay via Ko-fi. Instant nothing.</p>
         </div>
 
         <div className="hero-web-link">

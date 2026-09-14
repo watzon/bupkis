@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom'
+import GetBupkisLink from './GetBupkisLink'
 
-interface HeaderProps {
-  onGetBupkis: () => void
-}
-
-export default function Header({ onGetBupkis }: HeaderProps) {
+export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
@@ -12,9 +9,7 @@ export default function Header({ onGetBupkis }: HeaderProps) {
           <span className="wordmark-dot" aria-hidden="true" />
           bupkis<span className="wordmark-period">.</span>
         </Link>
-        <button type="button" className="btn-secondary header-cta" onClick={onGetBupkis}>
-          Get Bupkis — $4
-        </button>
+        <GetBupkisLink className="btn-secondary header-cta">Get Bupkis — $4</GetBupkisLink>
       </div>
     </header>
   )
